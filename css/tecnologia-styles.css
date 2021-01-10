@@ -1,0 +1,91 @@
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+/*
+body {
+    background-image: linear-gradient(to bottom, #FFE3B3 0%, #31B189 100%); 
+}
+*/
+H1 {
+
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color:#31B189;
+}
+
+h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+
+.contenedor {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+.nav-nt {
+    background-color: #7ACE67L;
+    border-radius: 10px;
+}
+.navegacion-inicial {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 780px) {
+    .navegacion-inicial {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.navegacion-inicial a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navegacion-inicial a:hover {
+    background-color: #31B189;
+    color: black;
+    border-radius: 35px;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.texto-principal {
+    color:white;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 15rem;
+}
+
+.texto-principal {
+    background-image: url(../Imagenes/arboles.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: auto;
+    position: relative;
+    background-attachment: fixed;
+    height: 40rem;
+}
