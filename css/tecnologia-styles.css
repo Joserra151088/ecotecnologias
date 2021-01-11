@@ -10,11 +10,12 @@ html {
 *::after {
     box-sizing: inherit;
 }
-
+*/
 body {
     background-image: linear-gradient(to bottom, #FFE3B3 0%, #31B189 100%); 
 }
-*/
+
+
 H1 {
 
     text-transform: uppercase;
@@ -50,7 +51,7 @@ h2 {
 }
 
 h3 {
-    writing-mode: vertical-rl;
+    /*writing-mode: vertical-rl;*/
     display: block;
     font-size:2rem;
 }
@@ -127,6 +128,106 @@ h3 {
 }
 
 
+.video {
+    margin: 0 0;
+    padding: 0 40rem;
+}
+
+ @media (max-width: 768px ) {
+
+        .video {
+            margin: 0 0;
+            padding: 0 10rem;
+        }
+
+}
+main {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    column-gap: 30px;
+    margin: 100px;
+}
+
+.primer-texto {
+    text-align: center;
+    background-color: #FFC872;
+    border-radius: 15px;
+
+}
+
+
+.imagen-contenido {
+    height: 168px;
+    width: 168px;
+    background-size: cover;
+}
+
+.p-ultimo {
+    color:black;
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: #FFC872;
+    border-radius: 15px;
+}
+
+.formulario {
+    background-color: rgba(213, 240, 138, 0.3);
+    width: min( 60rem, 100%);
+    /*el valor más pequeño*/
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
 
 
 
+.campo label {
+    color: white;
+    font-weight: bold;
+    display: block;
+    justify-content: center;
+}
+
+.campo textarea {
+    height: 20rem;
+    width: 50rem;
+}
+
+.input-text {
+    width: 50rem;
+    border: none;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.boton {
+    border: none;
+    font-size: 1.5rem;
+    text-align: center;
+    border-top-right-radius: 3px;
+}
+
+.boton :hover {
+    cursor:progress;
+}
+
+.contacto {
+    writing-mode: vertical-rl; 
+    color: white;
+}
+
+.help {
+    width: 400px;
+}
