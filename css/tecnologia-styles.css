@@ -1,0 +1,233 @@
+/*
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+*/
+body {
+    background-image: linear-gradient(to bottom, #FFE3B3 0%, #31B189 100%); 
+}
+
+
+H1 {
+
+    text-transform: uppercase;
+    font-size: 4rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color:#31B189;
+}
+
+ @media (max-width: 400px ) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+      
+}
+
+
+h2 {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+ @media (max-width: 500px ) {
+
+    h2 {
+        font-size: 2rem;
+    }
+      
+}
+
+h3 {
+    /*writing-mode: vertical-rl;*/
+    display: block;
+    font-size:2rem;
+}
+
+.imagenes {
+    height: 2000px;
+}
+
+.contenedor {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+.nav-nt {
+    background-color: #7ACE67;
+    border-radius: 10px;
+}
+.navegacion-inicial {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 780px) {
+    .navegacion-inicial {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.navegacion-inicial a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navegacion-inicial a:hover {
+    background-color: #31B189;
+    color: black;
+    border-radius: 35px;
+}
+
+.texto-prin {
+    position: relative;
+}
+
+.texto-principal {
+    background-image: url(../Imagenes/arboles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+    position: relative;
+    background-attachment: fixed;
+}
+
+
+.texto-principal {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ @media (max-width: 400px ) {
+     .texto-principal {
+         height: 30rem;
+         font-size: 1.5rem;
+     }     
+}
+
+
+.video {
+    margin: 0 0;
+    padding: 0 40rem;
+}
+
+ @media (max-width: 768px ) {
+
+        .video {
+            margin: 0 0;
+            padding: 0 10rem;
+        }
+
+}
+main {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    column-gap: 30px;
+    margin: 100px;
+}
+
+.primer-texto {
+    text-align: center;
+    background-color: #FFC872;
+    border-radius: 15px;
+
+}
+
+
+.imagen-contenido {
+    height: 168px;
+    width: 168px;
+    background-size: cover;
+}
+
+.p-ultimo {
+    color:black;
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: #FFC872;
+    border-radius: 15px;
+}
+
+.formulario {
+    background-color: rgba(213, 240, 138, 0.3);
+    width: min( 60rem, 100%);
+    /*el valor más pequeño*/
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+
+
+
+.campo label {
+    color: white;
+    font-weight: bold;
+    display: block;
+    justify-content: center;
+}
+
+.campo textarea {
+    height: 20rem;
+    width: 50rem;
+}
+
+.input-text {
+    width: 50rem;
+    border: none;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.boton {
+    border: none;
+    font-size: 1.5rem;
+    text-align: center;
+    border-top-right-radius: 3px;
+}
+
+.boton :hover {
+    cursor:progress;
+}
+
+.contacto {
+    writing-mode: vertical-rl; 
+    color: white;
+}
+
+.help {
+    width: 400px;
+}
